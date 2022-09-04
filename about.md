@@ -32,4 +32,15 @@ Our study of a computer system is performed based on abstraction levels. The rel
 
 ## Course Logistics
 
-Vehicula ipsum a arcu cursus vitae congue. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Risus sed vulputate odio ut enim blandit. Aliquam id diam maecenas ultricies mi eget. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Eget mi proin sed libero enim sed faucibus. Sem integer vitae justo eget magna fermentum iaculis. In mollis nunc sed id semper risus in. Sit amet risus nullam eget felis eget. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. At varius vel pharetra vel turpis nunc eget. Scelerisque purus semper eget duis at tellus.
+- Quizzes: 15%
+Every week starting from week 3 a review question about the previous lecture about 10-20 Multiple choices questions. 
+- Labs: 10%
+Hands-on experience with course material
+You can attend lab sections to work through the lab, or do them on your own
+Submitted on Gradescope "not yet available"
+- Projects: 30%
+Apply course concepts on larger codebases
+Submitted on Gradescope "not yet available"
+- Assessment Exam: 5%
+- Midterm: 15%
+- Final: 25%
