@@ -4,20 +4,15 @@ title: Introduction to Computer Organization
 
 Aug 28
 : [Course Logistics& Intro](#)
-  : [1.1](#)
+  : [Reading P&H 1.1,1.2,1.3](#)
 
-Sep 29
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+Oct 29
+: **Lab**{: .label .label-purple } [No Lab First Week](#)
 
-Sep 30
-: [Variables & Objects](#)
-  : [1.2](#), [2.1](#)
+Aug 30
+: [Intro to Computer Oragnization](#)
+  : [Reading P&H 1.4,1.5](#)
 
-Oct 1
-: **Lab**{: .label .label-purple } [Intro to Java](#)
-
-Oct 2
-: [Tracing, IntLists, & Recursion](#)
-  : [2.1](#)
-: **HW 1 due**{: .label .label-red }
+Thu 1
+: [Complmantry lectures](#)
+  : [No Reading Required just the Class](#)
