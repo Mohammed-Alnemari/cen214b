@@ -1,9 +1,9 @@
 ---
-name: Evil Kevin
-role: Teaching Assistant
+name: Dr.Mohammed Alnemari
+role: Assistant Professor
 email: me@example.com
-website: https://kevinl.info
-photo: kevin.jpg
+website: mohammed-alneamri.github.org
+photo: mohammed_alnemari.jpg
 ---
 
-I like teaching Computer Science!
+Computer Engineering is my Passion!
