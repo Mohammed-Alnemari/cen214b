@@ -1,9 +1,9 @@
 ---
-name: Really Evil Kevin
-role: Teaching Assistant
-email: me@example.com
-website: https://kevinl.info
-photo: kevin.jpg
+name: Dr.Mohammed Alnemari
+role: Professor Assistant
+email: mnemari@ut.edu.sa
+website: https://mohammed-alnemari.github.io/
+
 ---
 
-I like teaching Computer Science!
+
