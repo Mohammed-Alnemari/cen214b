@@ -1,23 +1,20 @@
 ---
-title: Basic Data Structures
+title: Digital Logic & Arthmetic & Intro C
 ---
 
-Oct 5
-: [Linked Lists & Encapsulation](#)
-  : [3.1](#), [2.2](#), [2.3](#)
+Sep 4
+: [Number Reprentation & Basic Digital logic](#)
+  : Reading [2.4, 3.2, A.2, A.5 & A.6]
+  
+Sep 5
+: **Lab**{: .label .label-purple } [Lab0 Piazza,GitHub, and Intro C](#)
 
-Oct 6
-: **Section**{: .label .label-purple }[Linked Lists](#)
-  : [Solution](#)
 
-Oct 7
-: [Resizing Arrays](#)
-  : [2.4](#), [2.5](#)
+Sep 6
+: [](#)
+  : [2.4](#)
 
-Oct 8
-: **Lab**{: .label .label-purple } [Resizing Arrays](#)
-
-Oct 9
-: [Runtime Analysis](#)
-  : [8.1](#), [8.2](#), [8.3](#), [8.4](#)
-: **HW 2 due**{: .label .label-red }
+Sep 8
+: [](#)
+  : [](#),
+: **Project 1 start**{: .label .label-red }
