@@ -1,9 +1,9 @@
 ---
-title: Introduction to Java
+title: Introduction to Computer Organization
 ---
 
-Sep 28
-: [Java & Git](#)
+Aug 28
+: [Course Logistics& Intro](#)
   : [1.1](#)
 
 Sep 29
