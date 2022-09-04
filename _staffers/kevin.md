@@ -1,8 +1,8 @@
 ---
-name: Kevin Lin
-role: Instructor
-email: me@example.com
-website: https://kevinl.info
+name: Mohammed Alnemari
+role: Assistant Professor
+email: mnemari@ut.edu.sa
+website: https://mohammed-alnemari.github.io
 photo: kevin.jpg
 ---
 
