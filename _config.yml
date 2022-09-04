@@ -16,7 +16,7 @@
 title: Just the Class
 tagline: A Jekyll template for course websites
 description: A modern, highly customizable, responsive Jekyll template for course websites
-author: Kevin Lin
+author: 
 baseurl: '/cen214b' # the subpath of your site, e.g. /blog
 url: 'https://mohammed-alnemari.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
@@ -28,12 +28,12 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
-  Mohammed Alnemari:
-    - 'https://mohammed-alnemari.github.io'
   BlackBoard Tabuk:
     - 'https://tabuk.blackboard.com/'
   Piazza:
     - 'https://tabuk.blackboard.com/'
+  icliker:
+    - 'https://www.iclicker.com/students/'  
 footer_content:
 
 # Collections for website data
