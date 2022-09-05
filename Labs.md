@@ -3,12 +3,17 @@ layout: page
 title: Labs
 description: Labs of the Course.
 ---
+# Lab-0 
+{:.no_toc}
 
-<details open>
-<summary> Labs 0 </summary>
-<br>
-<details open> 
-<summary> Part 0: Virtual Machine and SSH Overview </summary>
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+
+## Part 0: Virtual Machine and SSH Overview </summary>
 
 This part can be used to reference terms you don't know, but is not necessary for completing the lab. You should skim it.
 
@@ -24,13 +29,8 @@ More seriously, it is a version of Linux. Some of the most popular distributions
 
 What is a Virtual Machine (VM)?
 
-A virtual machine is an application that can imitate hardware such that you can run more than one operating system on your own computer. For example, I can run Windows on a Mac computer using a virtual machine. The VM can run while my usual operating system running without requiring a reboot. It works like any other application, sitting in a window you can minimize when you want to go on Facebook and maximize when you want to work on CS 3410 again. In case you hear this terminology, the Host OS refers to your computer, while the Guest OS is the operating system you are running on the VM.
+A virtual machine is an application that can imitate hardware such that you can run more than one operating system on your own computer. For example, I can run Windows on a Mac computer using a virtual machine. The VM can run while my usual operating system running without requiring a reboot. It works like any other application, sitting in a window you can minimize when you want to go on Facebook and maximize when you want to work on this class again. In case you hear this terminology, the Host OS refers to your computer, while the Guest OS is the operating system you are running on the VM.
 
 (So why do people use dual booting? Well, one reason is that VMs tend to have higher overhead, such as being slow with 3D graphics, but booting one OS at a time means that the OS can use the computer’s full speed.)
   
-  
-</details>
-  
-  
 
-</details>
