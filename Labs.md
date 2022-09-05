@@ -9,7 +9,7 @@ description: Labs of the Course.
 <br>
 <details open> 
 <summary> Part 0: Virtual Machine and SSH Overview </summary>
-<br>
+
 This part can be used to reference terms you don't know, but is not necessary for completing the lab. You should skim it.
 
 What is Linux?
