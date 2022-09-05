@@ -160,7 +160,215 @@ Hi USERNAME! You've successfully authenticated, but GitHub does not provide shel
 In the future, when cloning repos that require authentication (e.g. the private labs repo you'll create next), instead of using the HTTPS repo URL (like https://github.com/USERNAME/REPO_NAME.git), you should use the SSH repo URL instead (like git@github.com:USERNAME/REPO_NAME.git). For example, in https://github.com/cen214-student/fall22-lab0.git, the repo named fall22-lab0 is under the cen214-student user/organization, so the SSH clone URL would be git@github.com:cen214-student/fall22-lab0.git.
 
 
+In this labs you can use the editor that fit with your interest Vim,atom,nano whcih is simple and beginner-friendly compared to Vim and atom. It provides a helpful list of commands at the bottom of the interface (the ^ means the Ctrl key). Ships with many UNIX distributions (e.g. macOS, Ubuntu Linux). Open with nano file.txt.
+Visual Studio Code (VSCode): fancy graphical text editor. it has some pretty helpful extensions, including a Remote SSH extension that allows you to edit files over SSH in VSCode itself instead of a terminal-based editor.
+Alos my favorite the Clion which is a lot another fancy text editor. 
+
+### Part3a: Configure Git on your computer
+
+Be sure to set up your username and e-mail from the command line.
+```sh
+$ git config --global user.name "Your Name"
+$ git config --global user.email "your-email-used-for-github-acct@email.com"
+$ git config --global color.ui "auto"
+```
+Please configure your text editor as well.  If you’re not sure whether you’ve already configured Git, you can list your configuration by executing git config --list.
+
+### Part3b: Understand Git and how it works 
+
+#### Part3b1: Create a new repository on GitHub
+
+- To begin, sign in to your user account on GitHub.
+In the upper right corner, click the + sign icon, then choose New repository. This will take you to a page where you can enter a repository name (this tutorial uses test-repo as the repository name), description, and choose to initialize with a README (a good idea!).
+- It is a good idea to add a .gitignore file by selecting one of the languages from the drop down menu, though for this tutorial it will not be necessary.
+- Similarly, in practice you should choose a license to that people know whether and how they can use your code.
+Once you have entered a repository name and made your selection, select Create repository, and you will be taken to your new repository web page.
 
 
+#### Part3b2: Git at the command line
+Below you will learn a series of commands that you can run at the command line in git bash, terminal of whatever bash tool you are using. There are 2 types of commands that you will use
+
+Bash commands: These are commands that are native to bash / shell. They allow you to navigate around your computer, explore directory structures, create and manipulate files and directories, and more. (e.g. ls, cd, mkdir, etc)
+
+Git commands: These are commands that are specific to git and will only be available if you have git installed on your computer. Git specific commands will always started with a call to git (e.g. git status, git clone, etc)
 
 
+for more you can learn from here https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners
+
+
+#### Part3b3: Clone your repository to your local machine
+Next, clone your newly created repository from GitHub to your local computer. From your repository page on GitHub, click the green button labeled Clone or download, and in the “Clone with HTTPs” section, copy the URL for your repository.
+
+Next, on your local machine, open your bash shell and change your current working directory to the location where you would like to clone your repository. Note that here we are using a bash command - cd (change directory).
+
+For example, on a Unix based system, if you wanted to have your repository in your Documents folder, you change directories as follows:
+
+```sh
+cd Documents
+mkdir CEN214_tabuk_your_name
+cd CEN214_tabuk_your_name
+```
+
+The git clone command copies your repository from GitHub to your local computer. Note that this is a git specific command.
+
+
+```sh
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+When you run git clone repo-path-here, You should see output like:
+```sh
+Cloning into 'test-repo'...
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+Checking connectivity... done.
+```
+
+Note: The repository name and output numbers that you see on your computer, representing the total file size, etc, may differ from the example provided above.
+
+To verify that your repository now exists locally, type ls in your terminal. The ls command lists the files & folders available in your current directory. You should see a directory with the same name as the repository that you created previously on GitHub.
+
+
+#### Tracking changes with git add and git commit:
+Next use cd to change directories using the syntax:
+```sh
+cd my-repo-name
+```
+Replace my-repo-name with the folder name of your repo (this should be your repo name - e.g. 14ers-git)
+```sh
+cd test-repo
+```
+If you list all the files in this directory (using ls -a), you should see all of the files that exist in your GitHub repository:
+```sh
+ls -a
+```
+```sh
+.git  .gitignore  LICENSE  README.md
+```
+Alternatively, we can view the local repository in the finder (Mac), a Windows Explorer (Windows) window, or GUI file browser (Linux).
+Simply open your file browser and navigate to the new local repo.
+
+#### Edit a file in your repo
+Next, open up your favorite text editor and make a few edits to the README.md file. Save your changes.
+Once you are happy with your changes and have saved them, go back to your terminal window and type git status and hit return to execute the command.
+
+```sh
+git status
+```
+output 
+```sh
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+```
+
+The output from git status indicates that you have modified the file README.md. To keep track of this change to this file, you need to
+
+add the changes, then
+commit the changes.
+Add and commit changes
+You will use the add and commit functions to add and commit changes that you make to git.
+
+- git add: takes a modified file in your working directory and places the modified version in a staging area.
+- git commit takes everything from the staging area and makes a permanent snapshot of the current state of your repository that is associated with a unique identifier.
+These two commands make up the bulk of many workflows that use git for version control.
+
+[![IMAGE ALT TEXT HERE](https://www.earthdatascience.org/images/earth-analytics/git-version-control/git-add-commit.png)]
+
+
+Add files
+You can add an individual file or groups of files to git tracking. To add a single file, use
+```sh
+git add file-name-here-with-extension
+```
+To add the README.md file that you just modified, you’d use:
+```sh
+git add README.md
+```
+To add ALL of the files that you have edited at the same time, you can use:
+```sh
+git add --all
+```
+Use git add --all with caution. You do not want to accidentally add things like credential files, .DS_Store files, or history files.
+
+Commit files
+Once you are ready to make a snapshot of the current state of your repository, you can use git commit. The git commit command requires a commit message that describes the snapshot / changes that you made in that commit.
+
+A commit message should outline what changed and why. These messages
+
+help collaborators and your future self understand what was changed and why
+allow you and your collaborators to find (and undo if necessary) changes that were previously made.
+If you are not committing a lot of changes, you can create a short one line commit message using the -m flag:
+```sh
+git commit -m "Editing the README to try out git add/commit"
+```
+Alternatively, if you are committing many changes, or a small number of changes that require explanation, you’ll want to write a detailed multi-line commit message using a text editor.
+
+If you have configured git to use your favorite text editor (via git config --global core.editor your-fav-editor-here), then you can open that editor to write your commit message using the git commit command:
+```sh
+git commit
+```
+Once you save your commit message and exit the text editor, the file that you created will contain your commit message.
+
+#### Push changes to GitHub
+So far we have only modified our local copy of the repository. To add the changes to your git repo files on your computer to the version of your repository on GitHub, you need to push them GitHub.
+
+You can push your changes to GitHub with:
+
+```sh
+git push
+```
+You will then be prompted for your GitHub user name and password. After you’ve pushed your commits, visit your repository on GitHub and notice that your changes are reflected there, and also that you have access to the full commit history for your repository!
+
+
+## Part4: Intro to C Overview
+
+Welcome to C! It is a programming language that was first introduced almost half a century ago but is still one of the most commonly used programming languages due to its speed, efficiency, and ability to closely interface with hardware.
+
+Let's get to coding in C. On your Ubuntu machine (VM or SSH), open up a text editor (vim,nano,atom) and create a new file called hello.c. You can create and name the file in one step by entering the command atom hello.c. Type in the following C program (remember Insert mode):
+```sh
+#include <stdio.h>
+
+int main() {
+    printf("Hello world! I am [netid].\n");
+    return 0;
+}
+```
+But replace [netid] with your NetID (don't print square brackets). When you are done typing, save the file and exit the editor (remember Command mode and :wq?). Now you are ready to compile and run the program you just created! In your terminal, navigate to where you saved hello.c. Now run the command:
+
+```sh
+gcc -o sayhello hello.c
+```
+
+The C compiler (GCC) has compiled your source code hello.c into an executable named sayhello. The -o option allows us to name the resulting executable file anything we want. Without the flag, the default name given to the executable is a.out.
+
+If this gives you any errors, make sure you are in the right working directory (use ls to confirm that hello.c is in the same directory). If you are in the right location, then you did not enter the program correctly — go back to your editor and fix the program. Otherwise, you have just compiled a C program. You can run your program by running the command:
+
+```sh
+./sayhello
+```
+
+And your program should run! It should print Hello world! I am [netid]. and do nothing else. For example, if your NetID is "abc123", then compilation and execution would look like something like this:
+
+
+```sh
+~$ gcc -o sayhello hello.c
+~$ ./sayhello
+Hello world! I am abc123.
+```
+
+What does ./sayhello mean? The command ./sayhello means, run the executable sayhello which is located in the current directory (remember . means current directory and .. mean parent directory).
+
+
+## Part5: Now push your first code to Git
+You should now know how to push your first C code to the github. 
