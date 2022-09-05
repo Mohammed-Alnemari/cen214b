@@ -41,7 +41,7 @@ schedule:
         end: 05:30 PM
         location: 1-4-1-19
   - name: Tuesday
-     events:
+    events:
       - name: Lecture
         start: 10:00 AM
         end: 11:30 AM
@@ -70,6 +70,5 @@ schedule:
         start: 04:00 PM
         end: 06:00 PM
         location: 1-4-1-19
-  - name: Friday
-    
+  - name: Friday    
 ---
