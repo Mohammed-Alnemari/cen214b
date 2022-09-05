@@ -71,7 +71,7 @@ SSH (Secure shell) is a method of remotely connecting to and running commands on
 
 
 ## Part 2: Installing Bash and git
-### Part 2a: Install on Windows.. 
+### Part 2a1: Install on Windows.. 
 - Download the Git for Windows installer.
 - Run the installer and follow the steps below:
 - Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
@@ -97,6 +97,70 @@ Quit command prompt by typing exit then pressing Enter
 
   [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/339AEqk9c-8/0.jpg)](https://www.youtube.com/watch?v=339AEqk9c-8)
   
-### Part 2a: Install on Mac..
+### Part 2a2: Install Bash on Mac..
+The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities).
+
+To see if your default shell is Bash type 'code' echo $SHELL in Terminal and press the Return key. If the message printed does not end with '/bash' then your default is something else and you can run Bash by typing bash
+
+If you want to change your default shell, see this Apple Support article and follow the instructions on "How to change your default shell".
+
+### Part 2a3: Install Bash on Mac..
+The default shell is usually Bash and there is usually no need to install anything.
+
+To see if your default shell is Bash type echo $SHELL in a terminal and press the Enter key. If the message printed does not end with '/bash' then your default is something else and you can run Bash by typing bash.
+
+
+### Part 2b1: Install Git on Windows 
+Git should be installed on your computer as part of your Bash install
+
+### Part 2a2: Install  Git on Mac..
+You can use brew to install git or port to install git or you install Xcode will ship with git.
+
+Using Brew 
+```sh
+brew install git
+```
+
+Using port 
+```sh
+sudo port install git
+```
+
+
+### Part 2a3: Install  Git on Linux..
+
+If Git is not already available on your machine you can try to install it via your distro's package manager. 
+For Debian/Ubuntu run
+```sh
+sudo apt-get install git 
+```
+For Fedora run
+```sh
+ sudo dnf install git.
+```
+
+## Part3: Introducation to Git.. 
+Open a new terminal window.
+Print your public key:
+```sh
+cat ~/.ssh/id_ed25519.pub
+```
+It should look similar to the following (length may differ):
+```sh
+ssh-ed25519 AAAAC3NzaC1lZDI1N6jpH3Bnbebi7Xz7wMr20LxZCKi3U8UQTE5AAAAIBTc2HwlbOi8T your_email@example.com
+```
+ In your browser, go to GitHub => Settings => SSH and GPG Keys => New SSH key and add your public key.
+Set the title to something that helps you remember what device the key is on (e.g. CEN214b).
+ Try connecting to GitHub with SSH:
+```sh
+ssh -T git@github.com
+```
+If all went well, you should see something like:
+Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+In the future, when cloning repos that require authentication (e.g. the private labs repo you'll create next), instead of using the HTTPS repo URL (like https://github.com/USERNAME/REPO_NAME.git), you should use the SSH repo URL instead (like git@github.com:USERNAME/REPO_NAME.git). For example, in https://github.com/cen214-student/fall22-lab0.git, the repo named fall22-lab0 is under the cen214-student user/organization, so the SSH clone URL would be git@github.com:cen214-student/fall22-lab0.git.
+
+
+
+
 
 
