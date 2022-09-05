@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Lectures
-description: Lectures of the Course.
+title: Labs
+description: Labs of the Course.
 ---
 
 <details open>
