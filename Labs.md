@@ -46,7 +46,6 @@ What is SSH?
 
 SSH (Secure SHell) is a method of remotely connecting to and running commands on another computer (“remote” meaning something far away, so we are connecting to a computer far away). It can be accessed using the ssh command in a shell (like the Mac Terminal). It lets you access the resources of another computer that you may not have on your own computer. However, you cannot use SSH without an Internet connection. Cornell makes Ubuntu computers available to computer science students, which you can access remotely with SSH.
 
-How to SSH is explained in Part 1b.
 
 Windows does not come with an SSH client, which means you will need to install one on your computer if you are a Windows user. The we suggest Git (or Cygwin). Git lets you use the basic Linux commands that you'll need for this class. Cygwin puts a full UNIX environment (or close to it) but it has more overhead and you do not need it.
 
@@ -71,19 +70,33 @@ Note: It may take some time to start up.
 SSH (Secure shell) is a method of remotely connecting to and running commands on another computer. 
 
 
+## Part 2: Installing Bash and git
+### Part 2a: Install on Windows.. 
+- Download the Git for Windows installer.
+- Run the installer and follow the steps below:
+- Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
+- From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll up to find it) and click on "Next".
+- On the page that says "Adjusting the name of the initial branch in new repositories", ensure that "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+- Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)
+- Select "Use bundled OpenSSH".
+- Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+- Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+- Ensure that "Use Windows' default console window" is selected and click on "Next".
+- Ensure that "Default (fast-forward or merge) is selected and click "Next"
+- Ensure that "Git Credential Manager" is selected and click on "Next".
+- Ensure that "Enable file system caching" is selected and click on "Next".
+- Click on "Install".
+- Click on "Finish" or "Next".
+- If your "HOME" environment variable is not set (or you don't know what this is):
+Open command prompt (Open Start Menu then type cmd and press Enter)
+Type the following line into the command prompt window exactly as shown:
+setx HOME "%USERPROFILE%"
 
-Important: If you use Windows, your computer does not come with an SSH client. Skip down to "For Windows users only", then come back here to complete the process"
+- Press Enter, you should see SUCCESS: Specified value was saved.
+Quit command prompt by typing exit then pressing Enter
 
-Choose one of the two options:
-
-- Git
-If you do not already have Git installed on your computer, install it from here. You will be able to ssh by opening the "git bash" program and using the ssh tool there. If you would like to ssh through the windows command line, follow in the instructions below.
-If you do not already have Git installed, install it now.
-You’ll now need to find where Git installed its ssh client. It will either be in “C:\Program Files\Git\usr\bin” or “C:\Program Files\Git\bin”. Find which of those directories contains a file called “ssh.exe”, then copy that filepath
-Open Control Panel -> System and Security -> System, then click “Change Settings”. Go to “Advanced”, then click “Environment Variables”
-Under “User Variables” click “Path”, then click “Edit”
-Click “New”, then paste in the filepath from above (You may see just a string to edit instead - in this case simply type a semicolon separator then paste the path)
-Done! Now when you open the windows command line, you will be able to ssh.
-
+  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/339AEqk9c-8/0.jpg)](https://www.youtube.com/watch?v=339AEqk9c-8)
   
+### Part 2a: Install on Mac..
+
 
