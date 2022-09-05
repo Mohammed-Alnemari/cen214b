@@ -68,13 +68,9 @@ Note: It may take some time to start up.
 * You can learn more about VirtualBox at https://www.virtualbox.org/manual/ch01.html
 
 ### Part 1b: SSH
-SSH (Secure shell) is a method of remotely connecting to and running commands on another computer. Cornell makes Ubuntu machines available to computer science students and we have created one specifically for this class that is equivalent to the VM that is made available.
+SSH (Secure shell) is a method of remotely connecting to and running commands on another computer. 
 
-Important Note for SSH
 
-This is a system that will work anytime you’re connected to the internet... on Cornell Campus. Cornell's SSH network requires being connected to the same network as the machine you’re connecting to. Never fear though, the solution to this is called a VPN - a Virtual Private Network. This is a service that routes your traffic through a server (in this case on Cornell campus) so that you can connect to the VPN even when not on Cornell Wifi.
-
-You can find the VPN installation and connection instructions here. After installation, follow the connection tutorial at the same page to set up the connection.
 
 Important: If you use Windows, your computer does not come with an SSH client. Skip down to "For Windows users only", then come back here to complete the process"
 
@@ -88,13 +84,6 @@ Open Control Panel -> System and Security -> System, then click “Change Settin
 Under “User Variables” click “Path”, then click “Edit”
 Click “New”, then paste in the filepath from above (You may see just a string to edit instead - in this case simply type a semicolon separator then paste the path)
 Done! Now when you open the windows command line, you will be able to ssh.
-- Cygwin
-
-Visit https://www.cygwin.com/ and download the setup script appropriate for your computer (almost certainly the 64 bit one)
-Run the setup script. Select the option to download cygwin, then it will prompt you for a download site - I recommend simply selecting the top one.
-When it asks you to select packages, scroll down to “net” and click on “default” until it changes to “install”. This will ensure that the ssh client is installed with Cygwin
-Hit next and allow Cygwin to complete the installation process. Hit OK to install dependencies when it asks. The installation process may take some time (~5 to 10 minutes)
-Now when you need to ssh, you’ll open the program “cygwin” and use the terminal it provides
 
   
 
